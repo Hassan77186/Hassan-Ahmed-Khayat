@@ -1,0 +1,636 @@
+@keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+  @keyframes slideout {
+    from {
+      translate: 0 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 -150vw;
+      scale: 100% 1;
+    }
+  }
+
+  @keyframes html_bar {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 90%;
+    }
+  }
+  @keyframes css_bar {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 80%;
+    }
+  }
+  @keyframes js_bar {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 50%;
+    }
+  }
+  @keyframes php_bar {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 20%;
+    }
+  }
+body{
+    background-color: white ;
+}
+/*HEADER*/
+header{
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.500);
+    box-shadow: 0px 0px 12px black;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100000;
+}
+
+.h1{
+    text-align: left;
+    margin-inline: auto;
+    margin-top:10px ;
+    width: 30%;
+    height: 30px;
+}
+.h2{
+    text-align: center;
+    margin-inline: auto;
+    margin-top:10px ;
+    width: 30%;
+    height: 30px;
+}
+.h2 button{
+
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: none ;
+    border: none;
+}
+
+.h2 button img{
+    width: 20px;
+    height: 20px;
+    margin-inline: auto;
+    animation: slidein 1s;
+}
+.h3{
+    text-align: center;
+    margin-inline: auto;
+    margin-top:10px ;
+    width: 30%;
+    height: 30px;
+}
+
+#navphone{
+    position: absolute;
+    top: 0;
+    background-color: orange;
+    margin-top: 60px;
+    animation: slidein 0.5s;
+    width: 100%;
+    box-shadow: 0px 0px 12px black;
+    z-index: 10000000;
+}
+
+#navphone ul{
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    list-style: none;
+}
+#navphone ul li{
+    height: 100%;
+    padding-top:8px ;
+    margin-right: 10px;
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid white;
+}
+#navphone ul li a{
+    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top:8px ;
+    white-space: nowrap;
+    font-weight: bold;
+    width: 100%;
+    height: calc(100%-5px);
+}
+
+.navbar{
+    height: 100%;
+}
+
+.navbar ul{
+    margin: 0;
+    list-style: none;
+}
+.navbar ul li{
+    height: 100%;
+    padding-top:8px ;
+    margin-right: 10px;
+    display: inline-flex;
+}
+.navbar ul li a{ 
+
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/*CONTAINER*/
+
+.container{
+    margin-top: 60px;
+    margin-inline: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
+.firstofall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    height: 400px;
+}
+.firstofall .textbox{
+    
+    max-width: 400px;
+    width:100%;
+
+}
+.firstofall .textbox .title{
+    color: black;
+    width: 100%;
+    display: inline;
+    font-size: 30px;
+
+}
+
+.firstofall .textbox .text{
+    display: inline;
+    width: 100%;
+    font-size: 25px;
+    color: black;
+
+}
+.firstofall .image{
+    animation: slidein 1s;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+
+}
+.firstofall .image img{
+    filter: drop-shadow(1px 1px 5px red);
+    width: 100%;
+    animation: shadow 3s infinite;
+}
+.firstofall .button{
+
+    margin-top: 10px;
+
+}
+.firstofall .button button{
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    background: none ;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: border,color 0.5s;
+}
+.firstofall .button button:hover{
+    cursor: pointer;
+    color: orange;
+    border: 2px solid orange;
+}
+@keyframes shadow{
+    0%{     filter: drop-shadow(1px 1px 5px red);}
+    25%{     filter: drop-shadow(1px 1px 5px green);}
+    50%{   filter: drop-shadow(1px 1px 5px blue);}
+    75%{filter: drop-shadow(1px 1px 5px green);}
+    100%{filter: drop-shadow(1px 1px 5px red);}
+}
+
+/* SKILLS */
+
+.skills{
+
+    font-family: "Josefin Sans", sans-serif;
+    display: inline-flex;
+    padding: 10px;
+    max-width: 1200px;
+    width: 100%;
+}
+.stitle{
+    border-bottom: 2px solid black ;
+    text-align: center;
+    margin-top: 100px;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+}
+.skills .box{
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.skills .box .one{ 
+    line-height: 50px;
+}
+.skills .box .two{ 
+    line-height: 50px;
+}
+
+.weblanguage{
+    margin-left: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    color: black;
+    width: 100%;
+}
+
+.bar{
+    border: 1px solid rgba(39, 39, 39, 0.500);
+    border-radius: 10px;
+    width: 90%;
+    margin-block: 10px;
+}
+
+.html{
+    
+    text-align: right;
+    border-radius: 10px;
+    padding-right: 10px;
+    background: linear-gradient(0deg, rgba(189,152,0,1) 0%, rgba(255,179,0,1) 100%);
+    width: 90%;
+    animation: html_bar 10s ;
+}
+.css{
+    text-align: right;
+    border-radius: 10px;
+    padding-right: 10px;
+    background: linear-gradient(0deg, rgba(0,124,189,1) 0%, rgba(0,65,255,1) 100%);
+    width: 80%;
+    animation: css_bar 10s;
+}
+.JavaScript{
+    text-align: right;
+    border-radius: 10px;
+    padding-right: 10px;
+    background: linear-gradient(0deg, rgba(185,189,0,1) 0%, rgba(255,239,0,1) 100%);
+    width: 50%;
+    animation: js_bar 10s;
+}
+.php{
+    text-align: right;
+    border-radius: 10px;
+    padding-right: 10px;
+    background: linear-gradient(0deg, rgba(88,0,189,1) 0%, rgba(64,0,255,1) 100%);
+    width: 20%;
+    animation: php_bar 10s ;
+}
+.experience{
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    padding: 10px;
+    max-width: 1200px;
+    width: 100%;
+
+}
+.bbox{
+    width: 95%;
+    border-radius:10px ;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+.logo{
+    margin-top: 20px;
+
+}
+.btitle{
+    color: black;
+    font-weight: bold;
+
+}
+.btext{
+    color: black;
+    height: 35px;
+}
+
+.works{
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    padding: 10px;
+    max-width: 1200px;
+    width: 100%;
+
+}
+.works img{
+    margin-inline: auto;
+    width: 200px;
+}
+
+.andmore{
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    
+}
+table{
+    border: 1px solid black;
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+table th{
+    border-bottom: 2px solid black ;
+
+}
+
+table td{
+    line-height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.300) ;
+}
+
+.aboutme-box{
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row-reverse;
+
+}
+.aboutme-box .title{
+    color: black;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.aboutme-box .text{
+    line-height: 20px;
+    margin-inline: auto;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+
+}
+.aboutme-box .image{
+    margin-inline: auto;
+    width: 50%;
+
+}
+.aboutme-box .image img{
+    width: 100%;
+
+}
+.socialbar{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.social{
+    padding: 5px;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    background: none ;
+    border-radius: 10px;
+    transition: border,color 0.5s;
+    width: 100px;
+}
+
+.social:hover{
+    cursor: pointer;
+    color: orange;
+    border: 2px solid orange;
+}
+
+.thank-you-letter{
+    width: 300px;
+    margin: 20px auto;
+
+}
+.thank-you-letter  img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#welcome-box{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 10000;
+}
+
+#welcome-box .title{
+    font-size: 100px;
+    margin-top: 200px;
+    color: orange;
+    text-shadow: 0px 0px 12px black;
+}
+#welcome-box .input-name label{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 5px;
+    text-shadow: 0px 0px 12px black;
+}
+
+#welcome-box .input-name input{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background: none;
+    box-shadow: 0px 0px 12px black;
+    margin: 5px;
+}
+
+#welcome-box .input-name button{
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    background: none ;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: border,color 0.5s;
+    box-shadow: 0px 0px 12px black;
+    width: 100px;
+}
+#welcome-box .input-name button:hover{
+    cursor: pointer;
+    color: orange;
+    border: 2px solid orange;
+}
+
+.title-box{
+    text-align: center;
+    display: block;
+    border-bottom: 2px solid black;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    margin: 30px;
+    padding: 5px;
+}
+
+.letter-box{
+    font-size: 20px;
+ font-weight: bold;
+}
+.image-box img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+border-radius: 100%;
+box-shadow: 0px 0px 12px black;
+   }
+.text-box{
+    font-size: 15px;
+}
+
+/*FOOTER*/
+footer{
+
+    padding-top: 20px;
+    border-top: 2px solid black ;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+} 
+
+
+@media only screen and (min-width:770px){
+    #navphone{
+       visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:767px){
+
+
+    .firstofall{
+        display: block;
+    }
+
+    .h1{
+        text-align: left;
+        padding-left: 10px;
+        width: 100%;
+    }
+    .h2 button{
+        display: block;
+    }
+    .h3{
+        display: none;
+    }
+    .firstofall .textbox{
+    
+        text-align: center;
+    
+    }
+    .skills{
+        display: block;
+    }
+    .skills .box{
+        width: 70%;
+        display: block;
+    }
+    .skills .box .one{ 
+        line-height: 50px;
+    }
+    .skills .box .two{ 
+        line-height: 50px;
+    }
+    
+    .weblanguage{
+    margin-left: 0px;
+
+    }
+    .experience{
+        display: block;
+        gap: 5px;
+    }
+    .works{
+    display: block ;
+    }
+    .aboutme-box{
+
+        display: block;
+        
+
+    }
+    .social{
+        display: block;
+        margin: 5px auto;
+
+    }
+    .aboutme-box .image{
+
+        width: 100%;
+
+    }
+    #welcome-box .title{
+
+        font-size: 60px;
+
+    }
+
+}

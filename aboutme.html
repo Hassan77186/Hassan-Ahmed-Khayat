@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Changa:wght@200..800&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fredoka:wght@300..700&family=Fustat:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Licorice&family=Oswald:wght@200..700&family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://images.pexels.com/photos/27596252/pexels-photo-27596252/free-photo-of-hassan.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" type="image/png">
+    <title>Hassan Ahmed Khayat</title>
+</head>
+<body>
+
+    <header>
+        <div class="h1">
+            <div class="title">Hassan Ahmed Khayat</div>
+        </div>
+        <div class="h2">
+            <button onclick="showdiv()">
+                <img src="https://i.ibb.co/41rstnP/more.png" id="more">
+                <img src="https://i.ibb.co/cym90YZ/close.png" id="x">
+            </button>
+        </div>
+        <div class="h3">
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html" id="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cpp.html">
+                            C++
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutme.html" id="aboutme">
+                            Aboutme
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+    
+    <div id="navphone">
+        <ul>
+            <li>
+                <a href="index.html" id="home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="cpp.html">
+                    C++
+                </a>
+            </li>
+            <li>
+                <a href="aboutme.html">
+                    Aboutme
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="aboutme-box">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/27629002/pexels-photo-27629002/free-photo-of-old-money-outfit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            </div>
+            <div class="text">
+                <div class="title">Hassan Ahmed Hassan</div>
+                <p>
+                    Birthday: 6/10/2005
+                    <br>
+                    City: Zakho
+                    <br>
+                    When I was only 7 years old, I 
+                    loved computers and used them. 
+                    Because my father is a computer 
+                    teacher at the Military College.</p>
+                    <div class="socialbar">
+                        ANY QUESTION?
+                        <br>
+                        <button class="social" onclick="window.location.href='https://www.instagram.com/hassan_a_zaxoli?igsh=MTMwMjRmZGd6bWFnOQ==';">
+                            INSTAGRAM
+                        </button>
+                        <button class="social" onclick="window.location.href='https://www.tiktok.com/@rio37yt?_t=8oMsiLrabiw&_r=1';">
+                            TIKTOK
+                        </button>
+                
+                        <button class="social" onclick="window.location.href='https://www.snapchat.com/add/hassan.zaxoli?share_id=XNgW5339edM&locale=en-US';">
+                            SNAPCHAT
+                        </button>
+                
+                        <button class="social" onclick="window.location.href='https://t.me/+9647511462099';">
+                            TELEGRAM
+                        </button>
+                
+                <div class="thank-you-letter">
+                    <img src="https://i.ibb.co/R4VyZJb/Untitled-design-1.png">
+                </div>
+                
+                    </div>
+                </div>
+
+        
+        </div>
+        
+    <footer>
+        @2025 Created By <span>Hassan Ahmed Khayat</span>
+
+
+
+
+    </footer>
+
+
+    </div>
+
+    
+</body>
+
+<script>
+    document.getElementById('navphone').style.display = "none";
+    document.getElementById('x').style.display = "none";
+    document.getElementById('aboutme').style.color = "orange";
+    document.getElementById('aboutme').style.textDecoration = "underline";
+     function showdiv(){
+         var x = document.getElementById('navphone');
+         var y = document.getElementById('x');
+         var z = document.getElementById('more');
+         if(x.style.display === "none"){
+             x.style.animation = "slidein 1s forwards";
+ 
+             x.style.display = "block";
+             y.style.display = "block";
+             z.style.display = "none";
+         }else{
+             x.style.animation = "slideout 1s forwards";
+ 
+             setTimeout (() => {
+                 x.style.display = "none";
+ 
+             },1000);
+             y.style.display = "none";
+             z.style.display = "block";
+         }
+ 
+ 
+     }
+ 
+ 
+ 
+ </script>
+</html>
