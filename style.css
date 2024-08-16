@@ -112,8 +112,9 @@ header{
 }
 
 #navphone{
-    position: absolute;
+    position: fixed;
     top: 0;
+    left:0;
     background-color: orange;
     margin-top: 60px;
     animation: slidein 0.5s;
@@ -259,7 +260,7 @@ header{
 
     font-family: "Josefin Sans", sans-serif;
     display: inline-flex;
-    padding: 10px;
+
     max-width: 1200px;
     width: 100%;
 }
@@ -267,6 +268,7 @@ header{
     border-bottom: 2px solid black ;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 10px;
     color: black;
     font-family: "Josefin Sans", sans-serif;
     font-size: 30px;
@@ -284,6 +286,7 @@ header{
 }
 
 .weblanguage{
+    margin-top: 5px;
     margin-left: 10px;
     font-family: "Josefin Sans", sans-serif;
     color: black;
@@ -336,12 +339,12 @@ header{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 5px;
-    padding: 10px;
     max-width: 1200px;
     width: 100%;
 
 }
 .bbox{
+    margin-inline: auto;
     width: 95%;
     border-radius:10px ;
     border: 1px solid black;
@@ -368,7 +371,6 @@ header{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 5px;
-    padding: 10px;
     max-width: 1200px;
     width: 100%;
 
